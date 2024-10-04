@@ -1,4 +1,10 @@
-
+.header {
+    max-width: 60rem;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
   
   .list {
     display: flex;

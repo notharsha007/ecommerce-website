@@ -1,6 +1,15 @@
-import { Card, Typography, CardContent, CardMedia } from "@mui/material";
+import {
+  Card,
+  Typography,
+  CardContent,
+  CardMedia,
+  CardActions,
+  Button,
+} from "@mui/material";
+import { Box } from "@mui/system";
+import { Link } from "react-router-dom";
 
-export default function CardHolder({ image, name, content }) {
+export default function CardHolder({ image, name, content, productId }) {
   return (
     <Card
       sx={{
@@ -12,19 +21,14 @@ export default function CardHolder({ image, name, content }) {
         backgroundColor: "#f5f5f5",
         textAlign: "center",
         // padding: 1,
-        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-        '&:hover': {
-          transform: 'scale(1.05)',
-          boxShadow: '0 8px 16px rgba(0,0,0,0.3)',
+        transition: "transform 0.3s ease, box-shadow 0.3s ease",
+        "&:hover": {
+          transform: "scale(1.05)",
+          boxShadow: "0 8px 16px rgba(0,0,0,0.3)",
         },
       }}
     >
-      <CardMedia
-          component="img"
-          height="120"
-          image={image}
-          alt="picture"
-        />
+      <CardMedia component="img" height="120" image={image} alt="picture" />
       {/* <img
         src="/assets/apple.png"
         alt="An apple icon"
@@ -34,7 +38,7 @@ export default function CardHolder({ image, name, content }) {
         <Typography
           variant="h5"
           gutterBottom
-          component= "div"
+          component="div"
           // sx={{ fontSize: { xs: "0.8rem", sm: "1rem" } }}
         >
           {name}
@@ -46,6 +50,13 @@ export default function CardHolder({ image, name, content }) {
           {content}
         </Typography>
       </CardContent>
+      <CardActions>
+        <Box display="flex" justifyContent="center" width="100%">
+          <Link to={`/mock/${name}`} style={{ textDecoration: "none" }}>
+            <Button size="large">Buy</Button>
+          </Link>
+        </Box>
+      </CardActions>
     </Card>
   );
 }

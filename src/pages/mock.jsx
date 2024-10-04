@@ -9,18 +9,19 @@ const mock = new AxiosMockAdapter(axios);
 
 // Set up the mock response for fetching the values object
 mock.onGet("/api/fruits").reply(200, {
-  fruits: [
-    { name: "Apple", price: 1.5, image: "/assets/apple1.png" },
-    { name: "Banana", price: 0.75, image: "/assets/banana.png" },
-    { name: "Orange", price: 1.2, image: "/assets/orange.png" },
-    { name: "Mango", price: 2.0, image: "/assets/mango.png" },
-    { name: "Grapes", price: 2.5, image: "/assets/grapes.png" },
-    { name: "Litchi", price: 5.0, image: "/assets/litchi.png" },
-    { name: "Jackfruit", price: 9.0, image: "/assets/jackfruit.png" },
-    { name: "Peaches", price: 8.5, image: "/assets/peaches.png" },
-    { name: "Starfruit", price: 7.9, image: "/assets/starfruit.png" },
-  ],
-});
+  "fruits": [
+    { "name": "Smartphone", "price": 699.99, "image": "/assets/Smartphone.png" },
+    { "name": "Laptop", "price": 1099.99, "image": "/assets/Laptop.png" },
+    { "name": "Headphones", "price": 199.99, "image": "/assets/Headphones.png" },
+    { "name": "Smartwatch", "price": 249.99, "image": "/assets/Smartwatch.png" },
+    { "name": "Tablet", "price": 399.99, "image": "/assets/Tablet.png" },
+    { "name": "Gaming-Console", "price": 499.99, "image": "/assets/Gaming-Console.png" },
+    { "name": "Camera", "price": 799.99, "image": "/assets/Camera.png" },
+    { "name": "Bluetooth-Speaker", "price": 149.99, "image": "/assets/Bluetooth-Speaker.png" },
+    { "name": "Drone", "price": 999.99, "image": "/assets/Drone.png" }
+  ]
+}
+);
 
 export default function MockedPage() {
   const [fruits, setFruits] = useState([]);

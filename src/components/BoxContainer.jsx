@@ -19,7 +19,7 @@ export default function BoxContainer({ children }) {
             backgroundColor: "grey",
             width: "100%",
             maxWidth: 1000,
-            height: "100vh",
+            height: "100%",
             padding: 3,
             border: "1px solid #ccc",
             borderRadius: 2,
@@ -38,9 +38,9 @@ export default function BoxContainer({ children }) {
               left: 155,
               fontWeight: "bold",
               letterSpacing: "0.05em",
-              color: " #007BFF",
-              textDecoration: 'underline',
-              fontStyle: 'italic'
+              // color: " #007BFF",
+              // textDecoration: 'underline',
+              // fontStyle: 'italic'
             }}
           >
             Products:

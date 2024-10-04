@@ -10,6 +10,16 @@ import MockedPage from "./pages/mock.jsx";
 import GeneralHeader from "./components/Header.jsx";
 import { AppBar, Toolbar, Typography, Box, Container } from '@mui/material';
 import GeneralFooter from "./components/Footer.jsx";
+import ProductIdpage from "./productpages/SmartphonePage.jsx";
+import SmartphonePage from "./productpages/SmartphonePage.jsx";
+import LaptopPage from "./productpages/LaptopPage.jsx";
+import HeadphonesPage from "./productpages/HeadphonesPage.jsx";
+import SmartwatchPage from "./productpages/SmartwatchPage.jsx";
+import TabletPage from "./productpages/TabletPage.jsx";
+import GamingConsolePage from "./productpages/Gaming-ConsolePage.jsx";
+import CameraPage from "./productpages/CameraPage.jsx";
+import Bluetooth_Speaker from "./productpages/Bluetooth-SpeakerPage.jsx";
+import DronePage from "./productpages/DronePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +30,15 @@ const router = createBrowserRouter([
       { index: true, element: <LoginPage /> },
       { path: "/home", element: <HomePage /> },
       { path: "/mock", element: <MockedPage /> },
+      { path: "/mock/Smartphone", element: <SmartphonePage />},
+      { path: "/mock/Laptop", element: <LaptopPage />},
+      { path: "/mock/Headphones", element: <HeadphonesPage />},
+      { path: "/mock/Smartwatch", element: <SmartwatchPage />},
+      { path: "/mock/Tablet", element: <TabletPage />},
+      { path: "/mock/Gaming-Console", element: <GamingConsolePage />},
+      { path: "/mock/Camera", element: <CameraPage />},
+      { path: "/mock/Bluetooth-Speaker", element: <Bluetooth_Speaker />},
+      { path: "/mock/Drone", element: <DronePage />},
     ],
   },
 ]);

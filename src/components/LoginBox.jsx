@@ -6,15 +6,16 @@ export default function LoginBox({ children }) {
       <Box
         sx={{
           backgroundColor: "grey",
-          height: "400px",
+          height: "auto",
           width: "700px",
           margin: "auto",
-          display: "grid",
+          display: "flex",
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
           gap: "20px",
           overflow: "hidden",
+          mb: 2,
         }}
       >
         {children}
