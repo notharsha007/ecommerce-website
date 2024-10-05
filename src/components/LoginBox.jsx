@@ -5,7 +5,7 @@ export default function LoginBox({ children }) {
     <>
       <Box
         sx={{
-          backgroundColor: "grey",
+          backgroundColor: "white",
           height: "auto",
           width: "700px",
           margin: "auto",

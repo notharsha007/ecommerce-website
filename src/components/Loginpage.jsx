@@ -85,7 +85,7 @@ export default function LoginPage() {
             alignItems: "center",
             borderRadius: 1, // rounded corners
             // boxShadow: 2, // shadow effect
-            bgcolor: "grey",
+            bgcolor: "white",
           }}
         >
           <Typography variant="caption">

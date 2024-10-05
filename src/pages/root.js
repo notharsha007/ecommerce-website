@@ -7,14 +7,8 @@ import { Typography } from "@mui/material";
 function RootLayout() {
   return (
     <>
-      <header>
-        {/* Uncomment the navigation if needed */}
-        {/* <MainNavigation /> */}
-      </header>
-      <main>
         <Typography variant="h2"></Typography>
         <Outlet />
-      </main>
     </>
   );
 }

@@ -16,13 +16,13 @@ export default function BoxContainer({ children }) {
       >
         <Box
           sx={{
-            backgroundColor: "grey",
+            backgroundColor: "white",
             width: "100%",
             maxWidth: 1000,
             height: "100%",
             padding: 3,
-            border: "1px solid #ccc",
-            borderRadius: 2,
+            // border: "1px solid #ccc",
+            // borderRadius: 2,
             display: "grid", // Use grid layout
             gridTemplateColumns: "repeat(3, minmax(200px, 1fr))",
             columnGap: "20px",
@@ -34,8 +34,8 @@ export default function BoxContainer({ children }) {
             variant="h3" gutterBottom
             sx={{
               position: "absolute", // Take it out of the grid layout
-              top: 75,
-              left: 155,
+              top: 63,
+              left: 150,
               fontWeight: "bold",
               letterSpacing: "0.05em",
               // color: " #007BFF",
