@@ -30,7 +30,7 @@ export default function BoxContainer({ children }) {
             // justifyItems: "center",
           }}
         >
-          <Typography
+          {/* <Typography
             variant="h3" gutterBottom
             sx={{
               position: "absolute", // Take it out of the grid layout
@@ -44,7 +44,7 @@ export default function BoxContainer({ children }) {
             }}
           >
             Products:
-          </Typography>
+          </Typography> */}
           {children}
         </Box>
       </Box>
