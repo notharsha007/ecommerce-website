@@ -1,59 +1,211 @@
 export const values = {
-    fruits: [
-      {
-        name: "Smartphone",
-        price: 699.99,
-        image: "/assets/Smartphone.png",
-        desc: "The latest smartphone boasts advanced features such as a high-resolution camera, fast processing speed, and a sleek design. With its large display and intuitive interface, it's perfect for both productivity and entertainment on the go."
-      },
-      {
-        name: "Laptop",
-        price: 1099.99,
-        image: "/assets/Laptop.png",
-        desc: "This powerful laptop is designed for both gaming and productivity, equipped with a high-performance processor and dedicated graphics card. Its lightweight and portable design makes it easy to take anywhere, while its long battery life ensures you can work or play for hours."
-      },
-      {
-        name: "Headphones",
-        price: 199.99,
-        image: "/assets/Headphones.png",
-        desc: "These wireless headphones offer an immersive audio experience with top-notch sound quality and noise cancellation features. Whether you're listening to music or taking calls, you'll enjoy a comfortable fit and impressive battery life."
-      },
-      {
-        name: "Smartwatch",
-        price: 249.99,
-        image: "/assets/Smartwatch.png",
-        desc: "Stay connected and track your health with this feature-packed smartwatch. It includes fitness tracking, heart rate monitoring, and customizable watch faces, making it an essential accessory for anyone looking to maintain a healthy lifestyle while staying stylish."
-      },
-      {
-        name: "Tablet",
-        price: 399.99,
-        image: "/assets/Tablet.png",
-        desc: "This lightweight tablet is perfect for browsing the web, reading e-books, or streaming your favorite shows. With its vibrant display and powerful performance, it combines convenience and functionality, making it an ideal choice for on-the-go entertainment."
-      },
-      {
-        name: "Gaming-Console",
-        price: 499.99,
-        image: "/assets/Gaming-Console.png",
-        desc: "Experience gaming like never before with this next-gen gaming console. It offers stunning graphics, a vast library of games, and seamless online multiplayer capabilities, providing hours of entertainment for gamers of all levels."
-      },
-      {
-        name: "Camera",
-        price: 799.99,
-        image: "/assets/Camera.png",
-        desc: "Capture stunning photos and videos with this high-resolution camera. It features advanced image stabilization, various shooting modes, and exceptional low-light performance, making it the perfect choice for photography enthusiasts and professionals alike."
-      },
-      {
-        name: "Bluetooth-Speaker",
-        price: 149.99,
-        image: "/assets/Bluetooth-Speaker.png",
-        desc: "Enjoy your favorite music with this portable Bluetooth speaker, designed for rich sound quality and deep bass. Its compact size makes it easy to carry, and with its long battery life, you can take the party wherever you go."
-      },
-      {
-        name: "Drone",
-        price: 999.99,
-        image: "/assets/Drone.png",
-        desc: "Take your photography and videography to new heights with this advanced drone. Equipped with 4K video capabilities and an array of intelligent flight modes, it's perfect for capturing stunning aerial footage and breathtaking landscapes."
-      },
-    ],
-  };
-  
+  categories: [
+    {
+      name: "Smartphone",
+      price: 699.99,
+      image: "/assets/Smartphone.png",
+      desc: "The latest smartphone boasts advanced features such as a high-resolution camera, fast processing speed, and a sleek design.",
+      models: [
+        {
+          name: "Samsung Galaxy S21",
+          price: 799.99,
+          desc: "A premium smartphone with 120Hz AMOLED display and advanced camera features."
+        },
+        {
+          name: "Apple iPhone 13",
+          price: 999.99,
+          desc: "The latest iPhone with an A15 Bionic chip and improved battery life."
+        },
+        {
+          name: "Oppo Find X3",
+          price: 699.99,
+          desc: "An affordable flagship with an excellent display and fast charging capabilities."
+        }
+      ]
+    },
+    {
+      name: "Laptop",
+      price: 1099.99,
+      image: "/assets/Laptop.png",
+      desc: "This powerful laptop is designed for both gaming and productivity.",
+      models: [
+        {
+          name: "Dell XPS 13",
+          price: 1199.99,
+          desc: "A high-performance ultrabook with excellent battery life and a stunning display."
+        },
+        {
+          name: "Apple MacBook Pro",
+          price: 1499.99,
+          desc: "Apple’s flagship laptop with the M1 chip for top-notch performance."
+        },
+        {
+          name: "HP Spectre x360",
+          price: 999.99,
+          desc: "A 2-in-1 laptop with a sleek design and great battery life."
+        }
+      ]
+    },
+    {
+      name: "Headphones",
+      price: 199.99,
+      image: "/assets/Headphones.png",
+      desc: "These wireless headphones offer an immersive audio experience with noise cancellation features.",
+      models: [
+        {
+          name: "Sony WH-1000XM4",
+          price: 349.99,
+          desc: "Premium noise-cancelling headphones with superior sound quality."
+        },
+        {
+          name: "Bose QuietComfort 35 II",
+          price: 299.99,
+          desc: "High-quality noise-cancelling headphones with a comfortable fit."
+        },
+        {
+          name: "Apple AirPods Max",
+          price: 549.99,
+          desc: "Apple’s over-ear headphones with spatial audio and active noise cancellation."
+        }
+      ]
+    },
+    {
+      name: "Smartwatch",
+      price: 249.99,
+      image: "/assets/Smartwatch.png",
+      desc: "Stay connected and track your health with this feature-packed smartwatch.",
+      models: [
+        {
+          name: "Apple Watch Series 7",
+          price: 399.99,
+          desc: "The latest Apple Watch with advanced health tracking and a larger display."
+        },
+        {
+          name: "Samsung Galaxy Watch 4",
+          price: 299.99,
+          desc: "A feature-rich smartwatch with body composition analysis and Google WearOS."
+        },
+        {
+          name: "Fitbit Sense",
+          price: 249.99,
+          desc: "A smartwatch focused on health tracking with stress management features."
+        }
+      ]
+    },
+    {
+      name: "Tablet",
+      price: 399.99,
+      image: "/assets/Tablet.png",
+      desc: "This lightweight tablet is perfect for browsing the web and streaming shows.",
+      models: [
+        {
+          name: "Apple iPad Air",
+          price: 599.99,
+          desc: "A versatile tablet with the A14 Bionic chip and support for the Apple Pencil."
+        },
+        {
+          name: "Samsung Galaxy Tab S7",
+          price: 649.99,
+          desc: "A powerful Android tablet with a 120Hz display and S Pen support."
+        },
+        {
+          name: "Microsoft Surface Go 3",
+          price: 499.99,
+          desc: "A compact Windows tablet with a built-in kickstand and support for a keyboard."
+        }
+      ]
+    },
+    {
+      name: "Gaming-Console",
+      price: 499.99,
+      image: "/assets/Gaming-Console.png",
+      desc: "Experience gaming like never before with this next-gen gaming console.",
+      models: [
+        {
+          name: "PlayStation 5",
+          price: 499.99,
+          desc: "Sony’s latest console with stunning 4K graphics and fast load times."
+        },
+        {
+          name: "Xbox Series X",
+          price: 499.99,
+          desc: "Microsoft’s most powerful console with excellent backward compatibility."
+        },
+        {
+          name: "Nintendo Switch",
+          price: 299.99,
+          desc: "A versatile console that can switch between handheld and docked modes."
+        }
+      ]
+    },
+    {
+      name: "Camera",
+      price: 799.99,
+      image: "/assets/Camera.png",
+      desc: "Capture stunning photos and videos with this high-resolution camera.",
+      models: [
+        {
+          name: "Canon EOS R5",
+          price: 3899.99,
+          desc: "A professional mirrorless camera with 8K video capabilities and superb image quality."
+        },
+        {
+          name: "Sony Alpha a7 III",
+          price: 1999.99,
+          desc: "A full-frame mirrorless camera with great autofocus and 4K video recording."
+        },
+        {
+          name: "Nikon Z6 II",
+          price: 1799.99,
+          desc: "A high-quality mirrorless camera with great low-light performance."
+        }
+      ]
+    },
+    {
+      name: "Bluetooth-Speaker",
+      price: 149.99,
+      image: "/assets/Bluetooth-Speaker.png",
+      desc: "Enjoy your favorite music with this portable Bluetooth speaker.",
+      models: [
+        {
+          name: "JBL Flip 5",
+          price: 119.99,
+          desc: "A portable Bluetooth speaker with powerful sound and waterproof design."
+        },
+        {
+          name: "Bose SoundLink Revolve+",
+          price: 299.99,
+          desc: "A high-end Bluetooth speaker with 360-degree sound and deep bass."
+        },
+        {
+          name: "Ultimate Ears Boom 3",
+          price: 149.99,
+          desc: "A rugged and waterproof Bluetooth speaker with great sound quality."
+        }
+      ]
+    },
+    {
+      name: "Drone",
+      price: 999.99,
+      image: "/assets/Drone.png",
+      desc: "Take your photography and videography to new heights with this advanced drone.",
+      models: [
+        {
+          name: "DJI Mavic Air 2",
+          price: 799.99,
+          desc: "A compact drone with 4K video recording and intelligent flight modes."
+        },
+        {
+          name: "DJI Phantom 4 Pro",
+          price: 1499.99,
+          desc: "A professional-grade drone with a 1-inch sensor and 4K video at 60fps."
+        },
+        {
+          name: "Parrot Anafi",
+          price: 699.99,
+          desc: "A lightweight and foldable drone with 4K HDR video capabilities."
+        }
+      ]
+    }
+  ]
+};

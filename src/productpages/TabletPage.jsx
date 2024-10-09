@@ -5,10 +5,10 @@ export default function TabletPage() {
   return (
     <>
       <ProductDetailsTemplate
-        name={values.fruits[4].name}
-        price={values.fruits[4].price}
-        image={values.fruits[4].image}
-        desc={values.fruits[4].desc}
+        name={values.categories[4].name}
+        price={values.categories[4].price}
+        image={values.categories[4].image}
+        desc={values.categories[4].desc}
       />
     </>
   );

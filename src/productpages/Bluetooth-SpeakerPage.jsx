@@ -5,10 +5,10 @@ export default function Bluetooth_Speaker() {
   return (
     <>
       <ProductDetailsTemplate
-        name={values.fruits[7].name}
-        price={values.fruits[7].price}
-        image={values.fruits[7].image}
-        desc={values.fruits[7].desc}
+        name={values.categories[7].name}
+        price={values.categories[7].price}
+        image={values.categories[7].image}
+        desc={values.categories[7].desc}
       />
     </>
   );

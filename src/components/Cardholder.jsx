@@ -52,7 +52,7 @@ export default function CardHolder({ image, name, content, productId }) {
       </CardContent>
       <CardActions>
         <Box display="flex" justifyContent="center" width="100%">
-          <Link to={`/mock/${name}`} style={{ textDecoration: "none" }}>
+          <Link to={`/categories/${name}`} style={{ textDecoration: "none" }}>
             <Button size="large">Buy</Button>
           </Link>
         </Box>

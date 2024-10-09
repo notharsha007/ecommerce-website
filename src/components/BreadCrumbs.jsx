@@ -16,7 +16,7 @@ export default function BasicBreadcrumbs() {
           Login
         </RouterLink>
         <RouterLink
-          to="/mock"
+          to="/categories"
           style={{ textDecoration: "none", color: "inherit" }}
         >
           Categories

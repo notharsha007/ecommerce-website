@@ -64,7 +64,7 @@ export default function LoginPage() {
       password,
     });
 
-    navigate("/mock"); // Pass the credentialsList as state
+    navigate("/categories"); // Pass the credentialsList as state
 
     // Clear the input fields
     setUsername("");

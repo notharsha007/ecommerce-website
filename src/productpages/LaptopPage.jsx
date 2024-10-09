@@ -5,10 +5,10 @@ export default function LaptopPage() {
   return (
     <>
       <ProductDetailsTemplate
-        name={values.fruits[1].name}
-        price={values.fruits[1].price}
-        image={values.fruits[1].image}
-        desc={values.fruits[1].desc}
+        name={values.categories[1].name}
+        price={values.categories[1].price}
+        image={values.categories[1].image}
+        desc={values.categories[1].desc}
       />
     </>
   );

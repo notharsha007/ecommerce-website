@@ -5,10 +5,10 @@ export default function CameraPage() {
   return (
     <>
       <ProductDetailsTemplate
-        name={values.fruits[6].name}
-        price={values.fruits[6].price}
-        image={values.fruits[6].image}
-        desc={values.fruits[6].desc}
+        name={values.categories[6].name}
+        price={values.categories[6].price}
+        image={values.categories[6].image}
+        desc={values.categories[6].desc}
       />
     </>
   );

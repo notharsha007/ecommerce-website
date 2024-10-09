@@ -6,10 +6,12 @@ import { Typography } from "@mui/material";
 
 function RootLayout() {
   return (
-    <>
-        <Typography variant="h2"></Typography>
+    <div style={{ 
+      height: "100vh",           // Ensure it takes up the full viewport height
+      overflowX: "hidden",       // Prevent horizontal scrolling
+      overflowY: "hidden",}}>       
         <Outlet />
-    </>
+    </div>
   );
 }
 

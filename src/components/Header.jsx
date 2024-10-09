@@ -1,8 +1,10 @@
-import React from "react";
-import { AppBar, Toolbar, Box } from "@mui/material";
+import React, { useState } from "react";
+import { AppBar, Toolbar, Box, Menu, MenuItem } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from '@mui/material/InputBase';
+import Avatar from '@mui/material/Avatar';
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -11,10 +13,9 @@ const Search = styled("div")(({ theme }) => ({
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
-  marginLeft: 0,
-  width: "100%",
+  marginRight: theme.spacing(2),
+  width: "auto",
   [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(1),
     width: "auto",
   },
 }));
@@ -46,25 +47,58 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function GeneralHeader({ setSearchTerm }) {
+  const [anchorEl, setAnchorEl] = useState(null); // State for controlling the dropdown menu
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleAvatarClick = (event) => {
+    setAnchorEl(event.currentTarget); // Open menu on avatar click
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null); // Close menu
+  };
+
+  const handleSignOut = () => {
+    // Handle sign-out functionality here
+    console.log("Sign out clicked");
+    handleClose(); // Close menu after sign out
+    navigate("/"); // Redirect to the sign-out page (replace with your route)
+  };
+
   return (
     <AppBar position="sticky">
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box
           sx={{ height: 54 }}
           component="img"
-          alt="Left Logo"
+          alt="Site Logo"
           src="/assets/sitelogo.png"
         />
-        <Search>
-          <SearchIconWrapper>
-            <SearchIcon />
-          </SearchIconWrapper>
-          <StyledInputBase
-            placeholder="Search…"
-            inputProps={{ "aria-label": "search" }}
-            onChange={(e) => setSearchTerm(e.target.value)} // Update search term on input change
-          />
-        </Search>
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          <Search>
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Search…"
+              inputProps={{ "aria-label": "search" }}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </Search>
+          <Avatar onClick={handleAvatarClick} sx={{ cursor: 'pointer' }}>
+            H
+          </Avatar>
+          <Menu
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+            MenuListProps={{
+              'aria-labelledby': 'basic-button',
+            }}
+          >
+            <MenuItem onClick={handleSignOut}>Sign Out</MenuItem>
+          </Menu>
+        </Box>
       </Toolbar>
     </AppBar>
   );

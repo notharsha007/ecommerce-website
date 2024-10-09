@@ -5,10 +5,10 @@ export default function HeadphonesPage() {
   return (
     <>
       <ProductDetailsTemplate
-        name={values.fruits[2].name}
-        price={values.fruits[2].price}
-        image={values.fruits[2].image}
-        desc={values.fruits[2].desc}
+        name={values.categories[2].name}
+        price={values.categories[2].price}
+        image={values.categories[2].image}
+        desc={values.categories[2].desc}
       />
     </>
   );

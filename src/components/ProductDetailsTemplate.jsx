@@ -1,10 +1,10 @@
 import { Box, Typography, Grid, Paper, Button } from "@mui/material";
 import BackButton from "./BackButton";
+import GeneralHeader from "./Header";
 
 export default function ProductDetailsTemplate({ image, name, price, desc }) {
   return (
     <>
-      <BackButton />
       <Box
         sx={{
           display: "flex",

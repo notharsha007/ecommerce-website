@@ -5,10 +5,10 @@ export default function DronePage() {
   return (
     <>
       <ProductDetailsTemplate
-        name={values.fruits[8].name}
-        price={values.fruits[8].price}
-        image={values.fruits[8].image}
-        desc={values.fruits[8].desc}
+        name={values.categories[8].name}
+        price={values.categories[8].price}
+        image={values.categories[8].image}
+        desc={values.categories[8].desc}
       />
     </>
   );
