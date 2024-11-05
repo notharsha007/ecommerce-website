@@ -1,0 +1,168 @@
+{
+  "productCatalog": {
+    "categories": [
+      {
+        "id": 1,
+        "name": "Smartphone",
+        "price": 699.99,
+        "image": "/assets/Smartphone.png",
+        "desc": "The latest smartphone boasts advanced features such as a high-resolution camera, fast processing speed, and a sleek design.",
+        "models": [
+          { "id": 101, "name": "Samsung Galaxy S21", "price": 799.99, "desc": "A premium smartphone with 120Hz AMOLED display and advanced camera features." },
+          { "id": 102, "name": "Apple iPhone 13", "price": 999.99, "desc": "The latest iPhone with an A15 Bionic chip and improved battery life." },
+          { "id": 103, "name": "Oppo Find X3", "price": 699.99, "desc": "An affordable flagship with an excellent display and fast charging capabilities." },
+          { "id": 104, "name": "Google Pixel 6", "price": 799.99, "desc": "Features Google’s own Tensor chip and excellent computational photography." },
+          { "id": 105, "name": "Xiaomi Mi 11", "price": 749.99, "desc": "Offers a beautiful design with high performance and a top-tier camera." },
+          { "id": 106, "name": "OnePlus 9 Pro", "price": 899.99, "desc": "Fast and smooth experience with a 120Hz display and great camera quality." },
+          { "id": 107, "name": "Sony Xperia 5 III", "price": 999.99, "desc": "Compact flagship with excellent camera and a 120Hz OLED display." },
+          { "id": 108, "name": "Realme GT", "price": 649.99, "desc": "Affordable smartphone with flagship features and 5G capabilities." },
+          { "id": 109, "name": "Asus ROG Phone 5", "price": 999.99, "desc": "Gaming smartphone with a high refresh rate and powerful performance." }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Laptop",
+        "price": 1099.99,
+        "image": "/assets/Laptop.png",
+        "desc": "This powerful laptop is designed for both gaming and productivity.",
+        "models": [
+          { "id": 201, "name": "Dell XPS 13", "price": 1199.99, "desc": "A high-performance ultrabook with excellent battery life and a stunning display." },
+          { "id": 202, "name": "Apple MacBook Pro", "price": 1499.99, "desc": "Apple’s flagship laptop with the M1 chip for top-notch performance." },
+          { "id": 203, "name": "HP Spectre x360", "price": 999.99, "desc": "A 2-in-1 laptop with a sleek design and great battery life." },
+          { "id": 204, "name": "Lenovo ThinkPad X1 Carbon", "price": 1299.99, "desc": "Lightweight and durable, designed for business professionals." },
+          { "id": 205, "name": "Microsoft Surface Laptop 4", "price": 1199.99, "desc": "Sleek design with great performance and a vibrant touch display." },
+          { "id": 206, "name": "Razer Blade 15", "price": 1499.99, "desc": "A high-performance laptop designed for gaming enthusiasts." },
+          { "id": 207, "name": "Asus ZenBook 13", "price": 1099.99, "desc": "Compact and lightweight with great battery life and an OLED screen." },
+          { "id": 208, "name": "Acer Swift 3", "price": 849.99, "desc": "Affordable laptop with a fast processor and long-lasting battery." },
+          { "id": 209, "name": "LG Gram 16", "price": 1399.99, "desc": "Ultra-lightweight laptop with a large screen and great battery life." }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Headphones",
+        "price": 199.99,
+        "image": "/assets/Headphones.png",
+        "desc": "These wireless headphones offer an immersive audio experience with noise cancellation features.",
+        "models": [
+          { "id": 301, "name": "Sony WH-1000XM4", "price": 349.99, "desc": "Premium noise-cancelling headphones with superior sound quality." },
+          { "id": 302, "name": "Bose QuietComfort 35 II", "price": 299.99, "desc": "High-quality noise-cancelling headphones with a comfortable fit." },
+          { "id": 303, "name": "Apple AirPods Max", "price": 549.99, "desc": "Apple’s over-ear headphones with spatial audio and active noise cancellation." },
+          { "id": 304, "name": "Sennheiser Momentum 3", "price": 399.99, "desc": "Stylish headphones with superior audio clarity and comfort." },
+          { "id": 305, "name": "Jabra Elite 85h", "price": 249.99, "desc": "Great noise cancellation with water-resistant design." },
+          { "id": 306, "name": "Anker Soundcore Life Q30", "price": 79.99, "desc": "Affordable headphones with excellent noise-cancelling capability." },
+          { "id": 307, "name": "Shure AONIC 50", "price": 399.99, "desc": "Premium build quality with studio-level sound accuracy." },
+          { "id": 308, "name": "Bowers & Wilkins PX7", "price": 379.99, "desc": "Luxury headphones with a sleek design and immersive audio." },
+          { "id": 309, "name": "AKG N700NC", "price": 299.99, "desc": "Stylish, noise-cancelling headphones with crisp audio." }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Smartwatch",
+        "price": 249.99,
+        "image": "/assets/Smartwatch.png",
+        "desc": "Stay connected and track your health with this feature-packed smartwatch.",
+        "models": [
+          { "id": 401, "name": "Apple Watch Series 7", "price": 399.99, "desc": "The latest Apple Watch with advanced health tracking and a larger display." },
+          { "id": 402, "name": "Samsung Galaxy Watch 4", "price": 299.99, "desc": "A feature-rich smartwatch with body composition analysis and Google WearOS." },
+          { "id": 403, "name": "Fitbit Sense", "price": 249.99, "desc": "A smartwatch focused on health tracking with stress management features." },
+          { "id": 404, "name": "Garmin Venu 2", "price": 399.99, "desc": "Fitness-focused smartwatch with AMOLED display and great battery life." },
+          { "id": 405, "name": "Huawei Watch GT 3", "price": 229.99, "desc": "Stylish smartwatch with a long-lasting battery and health tracking." },
+          { "id": 406, "name": "Amazfit GTR 3 Pro", "price": 199.99, "desc": "Affordable smartwatch with health monitoring and sports tracking." },
+          { "id": 407, "name": "Withings ScanWatch", "price": 299.99, "desc": "Hybrid smartwatch with medical-grade ECG and health tracking." },
+          { "id": 408, "name": "Mobvoi TicWatch Pro 3", "price": 229.99, "desc": "Wear OS watch with dual-layer display for extended battery life." },
+          { "id": 409, "name": "Fossil Gen 6", "price": 299.99, "desc": "Stylish smartwatch with Wear OS and advanced fitness tracking." }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Tablet",
+        "price": 399.99,
+        "image": "/assets/Tablet.png",
+        "desc": "This lightweight tablet is perfect for browsing the web and streaming shows.",
+        "models": [
+          { "id": 501, "name": "Apple iPad Air", "price": 599.99, "desc": "A versatile tablet with the A14 Bionic chip and support for the Apple Pencil." },
+          { "id": 502, "name": "Samsung Galaxy Tab S7", "price": 649.99, "desc": "A powerful Android tablet with a 120Hz display and S Pen support." },
+          { "id": 503, "name": "Microsoft Surface Go 3", "price": 499.99, "desc": "A compact Windows tablet with a built-in kickstand and support for a keyboard." },
+          { "id": 504, "name": "Amazon Fire HD 10", "price": 149.99, "desc": "Affordable tablet with good performance for streaming and reading." },
+          { "id": 505, "name": "Lenovo Tab P11 Pro", "price": 399.99, "desc": "High-quality screen and great battery life for an affordable price." },
+          { "id": 506, "name": "Huawei MatePad Pro", "price": 499.99, "desc": "Stylish design with fast charging and great display." },
+          { "id": 507, "name": "Xiaomi Pad 5", "price": 399.99, "desc": "High performance tablet with a vibrant screen and large battery." },
+          { "id": 508, "name": "Samsung Galaxy Tab A7", "price": 229.99, "desc": "Affordable Android tablet with long battery life and solid build." },
+          { "id": 509, "name": "Apple iPad Mini", "price": 499.99, "desc": "Compact, powerful tablet with great display and Apple Pencil support." }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Gaming-Console",
+        "price": 499.99,
+        "image": "/assets/Gaming-Console.png",
+        "desc": "Experience gaming like never before with this next-gen gaming console.",
+        "models": [
+          { "id": 601, "name": "PlayStation 5", "price": 499.99, "desc": "Sony’s latest console with stunning 4K graphics and fast load times." },
+          { "id": 602, "name": "Xbox Series X", "price": 499.99, "desc": "Microsoft’s most powerful console with excellent backward compatibility." },
+          { "id": 603, "name": "Nintendo Switch", "price": 299.99, "desc": "A versatile console that can switch between handheld and docked modes." },
+          { "id": 604, "name": "PlayStation 4 Pro", "price": 399.99, "desc": "Sony’s last-gen console still powerful for high-quality gaming." },
+          { "id": 605, "name": "Xbox One X", "price": 399.99, "desc": "A strong performer in the previous generation of Xbox consoles." },
+          { "id": 606, "name": "Nintendo Switch Lite", "price": 199.99, "desc": "Portable version of the Switch designed for handheld gaming." },
+          { "id": 607, "name": "Atari VCS", "price": 299.99, "desc": "Retro console with classic Atari games and streaming capability." },
+          { "id": 608, "name": "Sega Genesis Mini", "price": 79.99, "desc": "Miniature console with preloaded classic Sega games." },
+          { "id": 609, "name": "NVIDIA Shield", "price": 199.99, "desc": "Streaming console with gaming capabilities and 4K support." }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Camera",
+        "price": 799.99,
+        "image": "/assets/Camera.png",
+        "desc": "Capture stunning photos and videos with this high-resolution camera.",
+        "models": [
+          { "id": 701, "name": "Canon EOS R5", "price": 3899.99, "desc": "A professional mirrorless camera with 8K video capabilities and superb image quality." },
+          { "id": 702, "name": "Sony Alpha a7 III", "price": 1999.99, "desc": "A full-frame mirrorless camera with great autofocus and 4K video recording." },
+          { "id": 703, "name": "Nikon Z6 II", "price": 1799.99, "desc": "A high-quality mirrorless camera with great low-light performance." },
+          { "id": 704, "name": "Fujifilm X-T4", "price": 1699.99, "desc": "Mirrorless camera with film simulation and great video capabilities." },
+          { "id": 705, "name": "Panasonic Lumix GH5", "price": 1499.99, "desc": "Micro Four Thirds camera with 4K video and excellent image stabilization." },
+          { "id": 706, "name": "Olympus OM-D E-M1 Mark III", "price": 1799.99, "desc": "Compact mirrorless camera with powerful image stabilization." },
+          { "id": 707, "name": "Canon EOS 90D", "price": 1199.99, "desc": "High-quality DSLR with 4K video recording and excellent autofocus." },
+          { "id": 708, "name": "Sony Cyber-shot RX100 VII", "price": 1299.99, "desc": "Compact camera with superb autofocus and 4K video capabilities." },
+          { "id": 709, "name": "Nikon D7500", "price": 999.99, "desc": "Advanced DSLR with great low-light performance and 4K video." }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Bluetooth-Speaker",
+        "price": 149.99,
+        "image": "/assets/Bluetooth-Speaker.png",
+        "desc": "Enjoy your favorite music with this portable Bluetooth speaker.",
+        "models": [
+          { "id": 801, "name": "JBL Flip 5", "price": 119.99, "desc": "A portable Bluetooth speaker with powerful sound and waterproof design." },
+          { "id": 802, "name": "Bose SoundLink Revolve+", "price": 299.99, "desc": "A high-end Bluetooth speaker with 360-degree sound and deep bass." },
+          { "id": 803, "name": "Ultimate Ears Boom 3", "price": 149.99, "desc": "A rugged and waterproof Bluetooth speaker with great sound quality." },
+          { "id": 804, "name": "Sony SRS-XB43", "price": 229.99, "desc": "Powerful speaker with extra bass and party lights." },
+          { "id": 805, "name": "Anker Soundcore Motion+", "price": 99.99, "desc": "Affordable speaker with high-res audio and deep bass." },
+          { "id": 806, "name": "Marshall Emberton", "price": 149.99, "desc": "Compact speaker with classic Marshall design and rich sound." },
+          { "id": 807, "name": "LG XBOOM Go PL7", "price": 179.99, "desc": "Powerful sound with dual-action bass and LED lights." },
+          { "id": 808, "name": "Tribit StormBox Micro", "price": 49.99, "desc": "Small and affordable with surprisingly good sound quality." },
+          { "id": 809, "name": "Bang & Olufsen Beosound A1 (2nd Gen)", "price": 250.00, "desc": "Premium speaker with high-end sound and waterproof design." }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Drone",
+        "price": 999.99,
+        "image": "/assets/Drone.png",
+        "desc": "Take your photography and videography to new heights with this advanced drone.",
+        "models": [
+          { "id": 901, "name": "DJI Mavic Air 2", "price": 799.99, "desc": "A compact drone with 4K video recording and intelligent flight modes." },
+          { "id": 902, "name": "DJI Phantom 4 Pro", "price": 1499.99, "desc": "A professional-grade drone with a 1-inch sensor and 4K video at 60fps." },
+          { "id": 903, "name": "Parrot Anafi", "price": 699.99, "desc": "A lightweight and foldable drone with 4K HDR video capabilities." },
+          { "id": 904, "name": "DJI Mini 2", "price": 449.99, "desc": "Compact and portable with 4K video and 31 minutes of flight time." },
+          { "id": 905, "name": "Autel EVO Lite+", "price": 1099.99, "desc": "Drone with excellent camera and stable flight performance." },
+          { "id": 906, "name": "Skydio 2", "price": 999.99, "desc": "High-performance autonomous drone with 4K HDR video." },
+          { "id": 907, "name": "Holy Stone HS720", "price": 299.99, "desc": "Affordable drone with GPS, 4K camera, and a foldable design." },
+          { "id": 908, "name": "PowerVision PowerEgg X", "price": 899.99, "desc": "Versatile drone with waterproof capabilities and AI tracking." },
+          { "id": 909, "name": "Yuneec Typhoon H Pro", "price": 1299.99, "desc": "Hexacopter with 4K video, intelligent flight modes, and stable performance." }
+        ]
+      }
+    ]
+  }
+}
